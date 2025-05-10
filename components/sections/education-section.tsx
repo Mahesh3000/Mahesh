@@ -23,36 +23,27 @@ const educations: Education[] = [
     degree: "Master of Science in Computer Science",
     institution: "Southern Arkansas University",
     location: "Magnolia, AR",
-    duration: "2024 - 2025  ",
-    description: "Specialized in Human-Computer Interaction and Software Engineering. Completed thesis on 'Improving User Experience Through Predictive Analytics'.",
+    duration: "2023 – 2025",
+    description: "Focused on Software Engineering, Cloud Computing, and Full Stack Development. Completed projects in AWS, authentication systems, and UI/UX engineering.",
     achievements: [
-      "Graduated with distinction",
-      "Published research paper on UI optimization",
-      "Teaching Assistant for 'Introduction to Web Development' course"
+      "Graduate coursework in Cloud, Security, and AI",
+      "Built LoginKit and CryptoTrack as capstone projects",
+      "GPA: 3.9/4.0"
     ]
   },
   {
     id: 2,
-    degree: "Bachelor of Science in Computer Science",
-    institution: "University of Michigan",
-    location: "Ann Arbor, MI",
+    degree: "Bachelor of Engineering in Electrical",
+    institution: "Jawaharlal Nehru Technological University (JNTU)",
+    location: "Kakinada, India",
     duration: "",
-    description: "Focused on software development and data structures. Participated in multiple hackathons and coding competitions.",
+    description: "Studied data structures, algorithms, operating systems, and software development. Actively involved in coding contests and team-based academic projects.",
     achievements: [
-      "Dean's List all semesters",
-      "Won 1st place in university hackathon",
-      "President of Web Development Club"
+      "Graduated with First Class",
     ]
-  },
-  {
-    id: 3,
-    degree: "Full Stack Web Development Certification",
-    institution: "Coding Bootcamp",
-    location: "Online",
-    duration: "2018",
-    description: "Intensive 12-week program covering modern web development technologies and practices. Built multiple full-stack applications as part of the curriculum."
   }
 ];
+
 
 export function EducationSection() {
   const [ref, inView] = useInView({

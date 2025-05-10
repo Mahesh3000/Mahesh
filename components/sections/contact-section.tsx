@@ -45,7 +45,7 @@ export function ContactSection() {
 
   function onSubmit(values: ContactFormValues) {
     setIsSubmitting(true);
-    
+
     // Simulate API call
     setTimeout(() => {
       console.log(values);
@@ -62,7 +62,7 @@ export function ContactSection() {
     <SectionContainer id="contact">
       <div ref={ref}>
         <SectionHeading>Get In Touch</SectionHeading>
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -73,7 +73,7 @@ export function ContactSection() {
             <p className="text-lg mb-8">
               Have a question or want to work together? Fill out the form and I'll get back to you as soon as possible.
             </p>
-            
+
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
                 <div className="bg-primary/10 p-3 rounded-full text-primary">
@@ -81,32 +81,32 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-medium">Email</h4>
-                  <p className="text-muted-foreground">contact@example.com</p>
+                  <p className="text-muted-foreground">mahesh.sivngi@gmail.com</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start space-x-4">
                 <div className="bg-primary/10 p-3 rounded-full text-primary">
                   <Phone className="h-6 w-6" />
                 </div>
                 <div>
                   <h4 className="font-medium">Phone</h4>
-                  <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                  <p className="text-muted-foreground">+1 (516) 519-2854</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start space-x-4">
                 <div className="bg-primary/10 p-3 rounded-full text-primary">
                   <MapPin className="h-6 w-6" />
                 </div>
                 <div>
                   <h4 className="font-medium">Location</h4>
-                  <p className="text-muted-foreground">San Francisco, CA</p>
+                  <p className="text-muted-foreground">Irving, TX</p>
                 </div>
               </div>
             </div>
           </motion.div>
-          
+
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={inView ? { opacity: 1, x: 0 } : { opacity: 0, x: 20 }}
@@ -130,7 +130,7 @@ export function ContactSection() {
                           </FormItem>
                         )}
                       />
-                      
+
                       <FormField
                         control={form.control}
                         name="email"
@@ -145,7 +145,7 @@ export function ContactSection() {
                         )}
                       />
                     </div>
-                    
+
                     <FormField
                       control={form.control}
                       name="subject"
@@ -159,7 +159,7 @@ export function ContactSection() {
                         </FormItem>
                       )}
                     />
-                    
+
                     <FormField
                       control={form.control}
                       name="message"
@@ -167,19 +167,19 @@ export function ContactSection() {
                         <FormItem>
                           <FormLabel>Message</FormLabel>
                           <FormControl>
-                            <Textarea 
-                              placeholder="Your message" 
-                              className="resize-none min-h-[150px]" 
-                              {...field} 
+                            <Textarea
+                              placeholder="Your message"
+                              className="resize-none min-h-[150px]"
+                              {...field}
                             />
                           </FormControl>
                           <FormMessage />
                         </FormItem>
                       )}
                     />
-                    
-                    <Button 
-                      type="submit" 
+
+                    <Button
+                      type="submit"
                       className="w-full flex items-center gap-2"
                       disabled={isSubmitting}
                     >

@@ -39,10 +39,17 @@ export function AboutSection() {
               Outside of coding, you’ll find me exploring UI/UX trends, refining personal projects like <span className="italic">LoginKit</span> and <span className="italic">CryptoTrack</span>, or catching up on the latest in tech and finance.
             </p>
             <div className="pt-4">
-              <Button className="flex items-center gap-2">
-                <Download className="h-4 w-4" />
-                Download Resume
-              </Button>
+              <a
+                href="https://maheshpersonalbucket.s3.us-east-1.amazonaws.com/Mahesh_Front_End_Web_Developer.pdf"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button className="flex items-center gap-2">
+                  <Download className="h-4 w-4" />
+                  Download Resume
+                </Button>
+              </a>
             </div>
           </motion.div>
 

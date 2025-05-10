@@ -24,22 +24,22 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: "E-Commerce Platform",
+    title: "Crypto Track",
     description: "A full-featured e-commerce platform built with Next.js, Tailwind CSS, and Stripe integration for payments.",
-    image: "https://images.pexels.com/photos/6956183/pexels-photo-6956183.jpeg",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Stripe"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    image: "https://maheshpersonalbucket.s3.us-east-1.amazonaws.com/crypto_Screen_shot.png",
+    tags: ["React", "TypeScript", "Tailwind CSS", "Lightweight Charts", "CoinGecko API", "AWS", "S3", "Lambda", "API Gateway"],
+    liveUrl: "https://cryptotrack.maheshsivangi.tech/",
+    githubUrl: "https://github.com/Mahesh3000/trading_app_frontend",
     featured: true,
   },
   {
     id: 2,
-    title: "Task Management App",
+    title: "Login Kit",
     description: "A drag-and-drop task management application with real-time updates and team collaboration features.",
-    image: "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg",
-    tags: ["React", "Firebase", "Tailwind CSS", "DnD"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    image: "https://maheshpersonalbucket.s3.us-east-1.amazonaws.com/Login_kit_screenschot.png",
+    tags: ["React", "JavaScript", "Node.js", "Redis", "TOTP", "JWT", "PostgreSQL", "Google OAuth", "AWS EC2"],
+    liveUrl: "https://app.loginkit.maheshsivangi.tech/",
+    githubUrl: "https://github.com/Mahesh3000/loginKit_forntend",
     featured: true,
   },
   {
@@ -91,25 +91,25 @@ export function ProjectsSection() {
   });
 
   const [filter, setFilter] = useState<"all" | "featured">("all");
-  
-  const filteredProjects = filter === "all" 
-    ? projects 
+
+  const filteredProjects = filter === "all"
+    ? projects
     : projects.filter(project => project.featured);
 
   return (
     <SectionContainer id="projects">
       <div ref={ref}>
         <SectionHeading>My Projects</SectionHeading>
-        
+
         <div className="flex justify-center gap-4 mt-8 mb-12">
-          <Button 
+          <Button
             variant={filter === "all" ? "default" : "outline"}
             onClick={() => setFilter("all")}
             className="min-w-[100px]"
           >
             All
           </Button>
-          <Button 
+          <Button
             variant={filter === "featured" ? "default" : "outline"}
             onClick={() => setFilter("featured")}
             className="min-w-[100px]"
@@ -117,7 +117,7 @@ export function ProjectsSection() {
             Featured
           </Button>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProjects.map((project, index) => (
             <motion.div
@@ -126,10 +126,12 @@ export function ProjectsSection() {
               animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <Card className="h-full flex flex-col overflow-hidden group">
+              {/* <Card className="h-full flex flex-col overflow-hidden group"> */}
+              <Card className="h-full flex flex-col overflow-hidden group transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+
                 <div className="relative overflow-hidden">
-                  <img 
-                    src={project.image} 
+                  <img
+                    src={project.image}
                     alt={project.title}
                     className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                   />

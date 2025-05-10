@@ -64,7 +64,7 @@ export function SkillsSection() {
     <SectionContainer id="skills">
       <div ref={ref}>
         <SectionHeading>My Skills</SectionHeading>
-        
+
         <div className="mt-12">
           <Tabs defaultValue="Frontend" className="w-full">
             <div className="flex justify-center mb-8">
@@ -76,7 +76,7 @@ export function SkillsSection() {
                 ))}
               </TabsList>
             </div>
-            
+
             {skillCategories.map((category) => (
               <TabsContent key={category.name} value={category.name}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
