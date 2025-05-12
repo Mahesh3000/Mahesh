@@ -53,7 +53,7 @@ export function AboutSection() {
             </div>
           </motion.div>
 
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
             transition={{ duration: 0.5, delay: 0.4 }}
@@ -67,6 +67,42 @@ export function AboutSection() {
               />
             </div>
             <div className="absolute -z-10 -bottom-6 -right-6 w-full h-full border-4 border-primary rounded-lg"></div>
+          </motion.div> */}
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="grid grid-cols-1 sm:grid-cols-2 gap-9"
+          >
+            {[
+              {
+                title: "Education",
+                content: "MS in Computer Science from Southern Arkansas University, with a strong foundation in UI/UX and software development.",
+              },
+              {
+                title: "Experience",
+                content: "2.5+ years as a Frontend Developer building trading dashboards, real-time data apps, and scalable UIs using React and TypeScript.",
+              },
+              {
+                title: "Technical Skills",
+                content: "React, Redux, TypeScript, Tailwind CSS, Node.js, PostgreSQL, AWS, Git, Authentication flows, and real-time data handling.",
+              },
+              {
+                title: "Achievements",
+                content: "Built and deployed LoginKit and CryptoTrack. AWS certified, published projects, and recognized for contributions to trading platforms.",
+              },
+            ].map((card, i) => (
+              <div
+                key={i}
+                className="rounded-2xl shadow-lg bg-white p-8 min-h-[200px] flex flex-col justify-start border border-gray-200"
+              >
+                <h3 className="text-xl font-semibold text-primary mb-4">
+                  {card.title}
+                </h3>
+                <p className="text-base text-gray-700 leading-relaxed">{card.content}</p>
+              </div>
+            ))}
           </motion.div>
         </div>
       </div>

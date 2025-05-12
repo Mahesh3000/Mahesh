@@ -21,6 +21,20 @@ interface Experience {
 const experiences: Experience[] = [
   {
     id: 1,
+    role: "Full Stack Developer (Personal Projects)",
+    company: "Self-Driven",
+    location: "Remote, USA",
+    duration: "2024 – Present",
+    description: [
+      "Developed LoginKit: a customizable authentication system supporting OTP, TOTP, and Google OAuth.",
+      "Built CryptoTrack: a real-time cryptocurrency tracker with visual charts and AWS-integrated backend.",
+      "Deployed full-stack applications using AWS EC2, S3, API Gateway, Lambda, and PostgreSQL.",
+      "Implemented secure auth flows with Redis caching, rate-limiting, and token handling."
+    ],
+    skills: ["Next.js", "Node.js", "PostgreSQL", "Redis", "AWS", "Tailwind CSS", "TOTP", "Google OAuth"]
+  },
+  {
+    id: 2,
     role: "Frontend Developer",
     company: "63moons Technologies Ltd.",
     location: "Mumbai, India",
@@ -32,20 +46,6 @@ const experiences: Experience[] = [
       "Optimized UI responsiveness and accessibility using React, Redux, and Tailwind CSS."
     ],
     skills: ["React", "Redux", "TypeScript", "Tailwind CSS", "WebSockets", "REST APIs", "JWT"]
-  },
-  {
-    id: 2,
-    role: "Full Stack Developer (Personal Projects)",
-    company: "Freelance / Self-Driven",
-    location: "Remote, USA",
-    duration: "2023 – Present",
-    description: [
-      "Developed LoginKit: a customizable authentication system supporting OTP, TOTP, and Google OAuth.",
-      "Built CryptoTrack: a real-time cryptocurrency tracker with visual charts and AWS-integrated backend.",
-      "Deployed full-stack applications using AWS EC2, S3, API Gateway, Lambda, and PostgreSQL.",
-      "Implemented secure auth flows with Redis caching, rate-limiting, and token handling."
-    ],
-    skills: ["Next.js", "Node.js", "PostgreSQL", "Redis", "AWS", "Tailwind CSS", "TOTP", "Google OAuth"]
   },
   {
     id: 3,
