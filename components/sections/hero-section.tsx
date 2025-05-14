@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import { SectionContainer } from "@/components/layout/section-container";
 import { motion } from "framer-motion";
 import { ChevronDown, Github, Linkedin, Mail, Twitter } from "lucide-react";
@@ -82,12 +83,22 @@ export function HeroSection() {
             className="aspect-square rounded-full bg-gradient-to-br from-primary/20 to-blue-500/20 dark:from-blue-500/10 dark:to-purple-500/10 p-1"
           >
             <div className="w-full h-full rounded-full bg-background flex items-center justify-center overflow-hidden">
+              <Image
+                src="https://maheshpersonalbucket.s3.us-east-1.amazonaws.com/IMG_3827.png"
+                alt="Professional headshot"
+                width={500} // Set appropriate width & height
+                height={500}
+                className="w-full h-full object-cover"
+                priority // optional: forces preload if it's above-the-fold
+              />
+            </div>
+            {/* <div className="w-full h-full rounded-full bg-background flex items-center justify-center overflow-hidden">
               <img
                 src="https://maheshpersonalbucket.s3.us-east-1.amazonaws.com/IMG_3827.png"
                 alt="Professional headshot"
                 className="w-full h-full object-cover"
               />
-            </div>
+            </div> */}
           </motion.div>
           <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] rounded-full border-8 border-dashed border-primary/20 animate-spin-slow"></div>
         </motion.div>
