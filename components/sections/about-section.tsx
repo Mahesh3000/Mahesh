@@ -27,17 +27,21 @@ export function AboutSection() {
             className="space-y-6"
           >
             <p className="text-lg">
-              Hello! I'm <span className="font-semibold">Mahesh Sivangi</span>, a dedicated Frontend Developer with 2.5+ years of experience building high-performance trading dashboards and scalable web applications.
+              Hello! I'm <span className="font-semibold">Mahesh Sivangi</span>, a Frontend Developer with nearly 5 years of experience building dynamic, high-performance web applications and trading platforms.
             </p>
             <p className="mt-2">
-              I specialize in crafting responsive, accessible, and intuitive user interfaces using modern technologies like React, Redux, TypeScript, and Tailwind CSS. I have hands-on experience working with real-time data, authentication systems, and cloud deployments on AWS.
+              I specialize in developing responsive, accessible, and scalable user interfaces using modern technologies like React, TypeScript, Redux, and Tailwind CSS. My work is driven by clean architecture, reusable components, and a deep understanding of frontend performance.
             </p>
             <p className="mt-2">
-              I'm passionate about translating complex ideas into clean, efficient code and delightful user experiences. Whether it’s collaborating with teams or optimizing frontend performance, I strive to bring both creativity and precision to every project.
+              Over the years, I've worked on complex fintech applications, integrating real-time data via WebSockets, implementing secure authentication flows (JWT, OTP, TOTP), and deploying full-stack applications on AWS infrastructure.
             </p>
             <p className="mt-2">
-              Outside of coding, you’ll find me exploring UI/UX trends, refining personal projects like <span className="italic">LoginKit</span> and <span className="italic">CryptoTrack</span>, or catching up on the latest in tech and finance.
+              I bring a balance of technical skill and product thinking—collaborating cross-functionally to translate business goals into elegant, user-focused solutions. Whether optimizing load times or improving code maintainability, I focus on delivering robust and thoughtful results.
             </p>
+            <p className="mt-2">
+              Outside of work, I actively build personal projects like <span className="italic">LoginKit</span> and <span className="italic">CryptoTrack</span>, explore evolving UI/UX patterns, and stay updated on the latest in web technologies and financial systems.
+            </p>
+
             <div className="pt-4">
               <a
                 href="https://maheshpersonalbucket.s3.us-east-1.amazonaws.com/Mahesh_Front_End_Web_Developer.pdf"
@@ -82,8 +86,9 @@ export function AboutSection() {
               },
               {
                 title: "Experience",
-                content: "2.5+ years as a Frontend Developer building trading dashboards, real-time data apps, and scalable UIs using React and TypeScript.",
+                content: "Nearly 5 years as a Frontend Developer building trading dashboards, real-time data applications, and scalable user interfaces using React, TypeScript, and modern web technologies.",
               },
+
               {
                 title: "Technical Skills",
                 content: "React, Redux, TypeScript, Tailwind CSS, Node.js, PostgreSQL, AWS, Git, Authentication flows, and real-time data handling.",

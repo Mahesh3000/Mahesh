@@ -60,6 +60,21 @@ const experiences: Experience[] = [
       "Learned modern frontend practices and version control using Git."
     ],
     skills: ["HTML", "CSS", "JavaScript", "React", "Git", "Bootstrap"]
+  },
+  {
+    id: 4,
+    role: "Full-Stack Developer",
+    company: "Airwise Soft Pvt Ltd (Client: Tranzact Solutions)",
+    location: "Hyderabad, India",
+    duration: "Dec 2018 – Feb 2021",
+    description: [
+      "Built and maintained web interfaces using HTML, CSS, and JavaScript, working closely with senior developers.",
+      "Contributed to UI components in React and Angular, fixing bugs and improving component reusability.",
+      "Designed relational and NoSQL data models using MySQL and MongoDB, optimizing queries for large-scale datasets.",
+      "Assisted with API integrations and gained hands-on experience in backend development using Node.js.",
+      "Collaborated in Agile sprints and worked cross-functionally to deliver features aligned with client requirements."
+    ],
+    skills: ["HTML", "CSS", "JavaScript", "React", "Angular", "Node.js", "MySQL", "MongoDB", "Agile"]
   }
 ];
 
