@@ -27,10 +27,18 @@ export function AboutSection() {
             className="space-y-6"
           >
             <p className="text-lg">
-              Hello! I'm <span className="font-semibold">Mahesh Sivangi</span>, a Frontend Developer with nearly 5 years of experience building dynamic, high-performance web applications and trading platforms.
+              Hello! I’m <span className="font-semibold">Mahesh Sivangi</span>, a
+              Full-Stack Software Engineer with 5 years of experience building
+              scalable web and enterprise applications across fintech and
+              trading domains.
             </p>
             <p className="mt-2">
-              I specialize in developing responsive, accessible, and scalable user interfaces using modern technologies like React, TypeScript, Redux, and Tailwind CSS. My work is driven by clean architecture, reusable components, and a deep understanding of frontend performance.
+              I specialize in developing cloud-native microservices and
+              high-performance UIs using <strong>React, TypeScript, Spring
+                Boot, Node.js,</strong> and <strong>AWS</strong>. My expertise
+              includes integrating <strong>real-time data streams</strong>,
+              optimizing backend performance, and implementing secure
+              authentication with <strong>JWT</strong>.
             </p>
             <p className="mt-2">
               Over the years, I've worked on complex fintech applications, integrating real-time data via WebSockets, implementing secure authentication flows (JWT, OTP, TOTP), and deploying full-stack applications on AWS infrastructure.
@@ -39,12 +47,18 @@ export function AboutSection() {
               I bring a balance of technical skill and product thinking—collaborating cross-functionally to translate business goals into elegant, user-focused solutions. Whether optimizing load times or improving code maintainability, I focus on delivering robust and thoughtful results.
             </p>
             <p className="mt-2">
-              Outside of work, I actively build personal projects like <span className="italic">LoginKit</span> and <span className="italic">CryptoTrack</span>, explore evolving UI/UX patterns, and stay updated on the latest in web technologies and financial systems.
+              My focus is delivering <strong>clean, maintainable code</strong> in
+              Agile environments, reducing downtime, and improving application
+              performance. Outside of work, I explore cloud architecture, UI/UX
+              patterns, and build side projects like{" "}
+              <span className="italic">CryptoTrack</span> and{" "}
+              <span className="italic">Breeze</span>.
             </p>
+
 
             <div className="pt-4">
               <a
-                href="https://maheshpersonalbucket.s3.us-east-1.amazonaws.com/Mahesh_Front_End_Web_Developer.pdf"
+                href="https://maheshpersonalbucket.s3.us-east-1.amazonaws.com/Mahesh_Software_Resume.pdf"
                 download
                 target="_blank"
                 rel="noopener noreferrer"
@@ -57,22 +71,6 @@ export function AboutSection() {
             </div>
           </motion.div>
 
-          {/* <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="relative"
-          >
-            <div className="rounded-lg overflow-hidden shadow-xl">
-              <img
-                src="https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg"
-                alt="Working on laptop"
-                className="w-full h-auto"
-              />
-            </div>
-            <div className="absolute -z-10 -bottom-6 -right-6 w-full h-full border-4 border-primary rounded-lg"></div>
-          </motion.div> */}
-
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={inView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.9 }}
@@ -82,16 +80,17 @@ export function AboutSection() {
             {[
               {
                 title: "Education",
-                content: "MS in Computer Science from Southern Arkansas University, with a strong foundation in UI/UX and software development.",
+                content: "Master’s in Computer Science with a strong foundation in full-stack development, cloud computing, and UI/UX design.",
               },
               {
                 title: "Experience",
-                content: "Nearly 5 years as a Frontend Developer building trading dashboards, real-time data applications, and scalable user interfaces using React, TypeScript, and modern web technologies.",
+                content: "5 years of experience delivering scalable applications, microservices, and real- time trading dashboards for web and enterprise platforms.",
+
               },
 
               {
                 title: "Technical Skills",
-                content: "React, Redux, TypeScript, Tailwind CSS, Node.js, PostgreSQL, AWS, Git, Authentication flows, and real-time data handling.",
+                content: "React, TypeScript, Spring Boot, Node.js, AWS, Docker, CI/CD, Kafka, WebSockets, and microservices architecture.",
               },
               {
                 title: "Achievements",
@@ -100,12 +99,17 @@ export function AboutSection() {
             ].map((card, i) => (
               <div
                 key={i}
-                className="rounded-2xl shadow-lg bg-white p-8 min-h-[200px] flex flex-col justify-start border border-gray-200"
+                className="rounded-2xl shadow-lg 
+             bg-white dark:bg-gray-900 
+             p-8 min-h-[200px] 
+             flex flex-col justify-start 
+             border border-gray-200 dark:border-gray-700 
+             transition-colors duration-500"
               >
                 <h3 className="text-xl font-semibold text-primary mb-4">
                   {card.title}
                 </h3>
-                <p className="text-base text-gray-700 leading-relaxed">{card.content}</p>
+                <p className="text-base text-gray-700 dark:text-gray-300 leading-relaxed">{card.content}</p>
               </div>
             ))}
           </motion.div>

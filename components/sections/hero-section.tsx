@@ -64,15 +64,7 @@ export function HeroSection() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="relative hidden lg:block"
         >
-          {/* <div className="aspect-square rounded-full bg-gradient-to-br from-primary/20 to-blue-500/20 dark:from-blue-500/10 dark:to-purple-500/10 p-1">
-            <div className="w-full h-full rounded-full bg-background flex items-center justify-center overflow-hidden">
-              <img
-                src="https://multi-market-hub.s3.us-east-1.amazonaws.com/MyData/Mahesh_linkedIn_profile_pic.jpeg"
-                alt="Professional headshot"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div> */}
+
           <motion.div
             animate={{ y: [0, -10, 0] }}
             transition={{

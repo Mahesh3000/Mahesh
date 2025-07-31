@@ -21,60 +21,47 @@ interface Experience {
 const experiences: Experience[] = [
   {
     id: 1,
-    role: "Full Stack Developer (Personal Projects)",
-    company: "Self-Driven",
-    location: "Remote, USA",
-    duration: "2024 – Present",
+    role: "Software Engineer",
+    company: "Citigroup",
+    location: "USA",
+    duration: "Jan 2025 – Present",
     description: [
-      "Developed LoginKit: a customizable authentication system supporting OTP, TOTP, and Google OAuth.",
-      "Built CryptoTrack: a real-time cryptocurrency tracker with visual charts and AWS-integrated backend.",
-      "Deployed full-stack applications using AWS EC2, S3, API Gateway, Lambda, and PostgreSQL.",
-      "Implemented secure auth flows with Redis caching, rate-limiting, and token handling."
+      "Designed and developed a cloud-native microservices-based trading analytics platform using React.js, Spring Boot, and AWS.",
+      "Reduced latency by 50ms per request and improved client portfolio analysis speed by 35%.",
+      "Implemented JWT-based authentication with Spring Security, achieving 100% compliance with internal cybersecurity standards.",
+      "Built a real-time trade monitoring dashboard with ELK Stack and Kafka, reducing anomaly detection time from 30 min to under 5 min.",
+      "Automated CI/CD pipelines using Jenkins and AWS CodePipeline, cutting deployment time by 70% and enabling weekly releases."
     ],
-    skills: ["Next.js", "Node.js", "PostgreSQL", "Redis", "AWS", "Tailwind CSS", "TOTP", "Google OAuth"]
+    skills: ["React.js", "Spring Boot", "AWS", "Kafka", "ELK Stack", "JWT", "Jenkins", "Microservices"]
   },
   {
     id: 2,
-    role: "Frontend Developer",
+    role: "Software Engineer",
     company: "63moons Technologies Ltd.",
     location: "Mumbai, India",
-    duration: "2022 – 2024",
+    duration: "Sep 2022 – Dec 2023",
     description: [
-      "Built and maintained high-performance trading dashboards for NSE, BSE, and MCX exchanges.",
-      "Worked with real-time market data using WebSockets and RESTful APIs.",
-      "Collaborated with backend teams to integrate secure, scalable features using JWT and Redis.",
-      "Optimized UI responsiveness and accessibility using React, Redux, and Tailwind CSS."
+      "Developed high-performance ReactJS trading applications for NSE, BSE, and MCX with live market data feeds via WebSockets.",
+      "Delivered dynamic dashboards with Chart.js and D3.js, increasing feature usage by 40%.",
+      "Optimized backend queries in MySQL and implemented JWT authentication to enhance security and compliance.",
+      "Improved application performance and reduced API calls with efficient Redux state management.",
+      "Deployed microservices to AWS with a 20% improvement in release cycle efficiency."
     ],
-    skills: ["React", "Redux", "TypeScript", "Tailwind CSS", "WebSockets", "REST APIs", "JWT"]
+    skills: ["React", "Redux", "WebSockets", "Chart.js", "D3.js", "JWT", "MySQL", "AWS"]
   },
   {
     id: 3,
-    role: "Web Developer Intern",
-    company: "Pythian Technologies",
+    role: "Jr. Software Engineer",
+    company: "Adons Softech",
     location: "Hyderabad, India",
-    duration: "2021 – 2022",
+    duration: "Aug 2019 – Aug 2022",
     description: [
-      "Assisted in creating responsive UI components and reusable design templates.",
-      "Contributed to bug fixes, testing, and documentation across client-facing projects.",
-      "Collaborated in Agile sprints, participated in team stand-ups and code reviews.",
-      "Learned modern frontend practices and version control using Git."
+      "Contributed to enterprise web applications using Angular.js, Material UI, and Node.js APIs.",
+      "Migrated core JavaScript modules to TypeScript, reducing runtime errors by 45%.",
+      "Implemented Redis caching for high-read APIs, improving backend throughput by 35%.",
+      "Collaborated in Agile sprints, handled bug fixes, and supported test-driven development."
     ],
-    skills: ["HTML", "CSS", "JavaScript", "React", "Git", "Bootstrap"]
-  },
-  {
-    id: 4,
-    role: "Full-Stack Developer",
-    company: "Airwise Soft Pvt Ltd (Client: Tranzact Solutions)",
-    location: "Hyderabad, India",
-    duration: "Dec 2018 – Feb 2021",
-    description: [
-      "Built and maintained web interfaces using HTML, CSS, and JavaScript, working closely with senior developers.",
-      "Contributed to UI components in React and Angular, fixing bugs and improving component reusability.",
-      "Designed relational and NoSQL data models using MySQL and MongoDB, optimizing queries for large-scale datasets.",
-      "Assisted with API integrations and gained hands-on experience in backend development using Node.js.",
-      "Collaborated in Agile sprints and worked cross-functionally to deliver features aligned with client requirements."
-    ],
-    skills: ["HTML", "CSS", "JavaScript", "React", "Angular", "Node.js", "MySQL", "MongoDB", "Agile"]
+    skills: ["Angular.js", "Material UI", "Node.js", "TypeScript", "Redis", "MySQL", "Agile"]
   }
 ];
 
