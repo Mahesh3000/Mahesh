@@ -4,7 +4,6 @@ import { SectionContainer } from "@/components/layout/section-container";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 
@@ -28,40 +27,46 @@ export function AboutSection() {
           >
             <p className="text-lg">
               Hello! I’m <span className="font-semibold">Mahesh Sivangi</span>, a
-              Full-Stack Software Engineer with 5 years of experience building
-              scalable web and enterprise applications across fintech and
-              trading domains.
-            </p>
-            <p className="mt-2">
-              I specialize in developing cloud-native microservices and
-              high-performance UIs using <strong>React, TypeScript, Spring
-                Boot, Node.js,</strong> and <strong>AWS</strong>. My expertise
-              includes integrating <strong>real-time data streams</strong>,
-              optimizing backend performance, and implementing secure
-              authentication with <strong>JWT</strong>.
-            </p>
-            <p className="mt-2">
-              Over the years, I've worked on complex fintech applications, integrating real-time data via WebSockets, implementing secure authentication flows (JWT, OTP, TOTP), and deploying full-stack applications on AWS infrastructure.
-            </p>
-            <p className="mt-2">
-              I bring a balance of technical skill and product thinking—collaborating cross-functionally to translate business goals into elegant, user-focused solutions. Whether optimizing load times or improving code maintainability, I focus on delivering robust and thoughtful results.
-            </p>
-            <p className="mt-2">
-              My focus is delivering <strong>clean, maintainable code</strong> in
-              Agile environments, reducing downtime, and improving application
-              performance. Outside of work, I explore cloud architecture, UI/UX
-              patterns, and build side projects like{" "}
-              <span className="italic">CryptoTrack</span> and{" "}
-              <span className="italic">Breeze</span>.
+              Full-Stack Software Engineer with 4+ years building scalable web and
+              enterprise applications across fintech and trading.
             </p>
 
+            <p className="mt-2">
+              I specialize in cloud-native microservices and high-performance UIs using{" "}
+              <strong>React, TypeScript, Spring Boot, Node.js, Go</strong>, and{" "}
+              <strong>AWS</strong>. I integrate <strong>real-time data</strong> via
+              WebSockets/Kafka, design robust REST APIs, and work across{" "}
+              <strong>MySQL, PostgreSQL, MongoDB, and Redis</strong>.
+            </p>
+
+            <p className="mt-2">
+              Highlights include reducing request latency by <strong>50ms+</strong>,
+              cutting deployment time by <strong>70%</strong> with CI/CD{" "}
+              (Jenkins, GitHub Actions, CodePipeline), and increasing feature adoption by{" "}
+              <strong>30–40%</strong> through interactive, data-rich dashboards.
+            </p>
+
+            <p className="mt-2">
+              I care about <strong>clean, maintainable code</strong>, secure auth{" "}
+              (<strong>OAuth2, JWT</strong>), and collaborative delivery in Agile teams.
+              Lately I’m deepening <strong>Go</strong> and <strong>Spring Boot</strong>{" "}
+              microservices and data engineering patterns.
+            </p>
+
+            <p className="mt-2">
+              On the side, I build{" "}
+              <span className="italic">CryptoTrack</span> (Next.js + AWS) and{" "}
+              <span className="italic">Breeze</span> (trading UI with RxJS/WebSockets).
+            </p>
 
             <div className="pt-4">
               <a
-                href="https://maheshpersonalbucket.s3.us-east-1.amazonaws.com/Mahesh_Software_Resume.pdf"
+                href="https://maheshpersonalbucket.s3.us-east-1.amazonaws.com/Mahesh_Dev_Resume.pdf"
+
                 download
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Download Mahesh Sivangi Resume (PDF)"
               >
                 <Button className="flex items-center gap-2">
                   <Download className="h-4 w-4" />
@@ -80,36 +85,33 @@ export function AboutSection() {
             {[
               {
                 title: "Education",
-                content: "Master’s in Computer Science with a strong foundation in full-stack development, cloud computing, and UI/UX design.",
+                content:
+                  "M.S. in Computer Science — Southern Arkansas University (AR). Focus on full-stack engineering, cloud, and data-intensive systems.",
               },
               {
                 title: "Experience",
-                content: "5 years of experience delivering scalable applications, microservices, and real- time trading dashboards for web and enterprise platforms.",
-
+                content:
+                  "4+ years shipping fintech/trading dashboards and microservices (Citigroup, 63moons, Adons). Real-time systems at scale.",
               },
-
               {
                 title: "Technical Skills",
-                content: "React, TypeScript, Spring Boot, Node.js, AWS, Docker, CI/CD, Kafka, WebSockets, and microservices architecture.",
+                content:
+                  "React, TypeScript, Next.js, Node.js, Java/Spring Boot, Go; AWS (EC2, RDS, S3, Lambda, API Gateway, CloudFront), Docker, Kubernetes; Kafka, ELK; SQL/NoSQL; CI/CD.",
               },
               {
                 title: "Achievements",
-                content: "Built and deployed LoginKit and CryptoTrack. AWS certified, published projects, and recognized for contributions to trading platforms.",
+                content:
+                  "−50ms+ latency, −70% deploy time, +30–40% feature adoption. Built & deployed Breeze and CryptoTrack. AWS Cloud Practitioner certified.",
               },
             ].map((card, i) => (
               <div
                 key={i}
-                className="rounded-2xl shadow-lg 
-             bg-white dark:bg-gray-900 
-             p-8 min-h-[200px] 
-             flex flex-col justify-start 
-             border border-gray-200 dark:border-gray-700 
-             transition-colors duration-500"
+                className="rounded-2xl shadow-lg bg-white dark:bg-gray-900 p-8 min-h-[200px] flex flex-col justify-start border border-gray-200 dark:border-gray-700 transition-colors duration-500"
               >
-                <h3 className="text-xl font-semibold text-primary mb-4">
-                  {card.title}
-                </h3>
-                <p className="text-base text-gray-700 dark:text-gray-300 leading-relaxed">{card.content}</p>
+                <h3 className="text-xl font-semibold text-primary mb-4">{card.title}</h3>
+                <p className="text-base text-gray-700 dark:text-gray-300 leading-relaxed">
+                  {card.content}
+                </p>
               </div>
             ))}
           </motion.div>

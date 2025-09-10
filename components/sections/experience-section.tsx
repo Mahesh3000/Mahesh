@@ -24,15 +24,29 @@ const experiences: Experience[] = [
     role: "Software Engineer",
     company: "Citigroup",
     location: "USA",
-    duration: "Jan 2025 – Present",
+    duration: "Jun 2025 – Present",
     description: [
-      "Designed and developed a cloud-native microservices-based trading analytics platform using React.js, Spring Boot, and AWS.",
-      "Reduced latency by 50ms per request and improved client portfolio analysis speed by 35%.",
-      "Implemented JWT-based authentication with Spring Security, achieving 100% compliance with internal cybersecurity standards.",
-      "Built a real-time trade monitoring dashboard with ELK Stack and Kafka, reducing anomaly detection time from 30 min to under 5 min.",
-      "Automated CI/CD pipelines using Jenkins and AWS CodePipeline, cutting deployment time by 70% and enabling weekly releases."
+      "Designed and developed full-stack features using React and TypeScript with Go services for a cloud-native, microservices-based trading analytics platform.",
+      "Built and integrated RESTful APIs and event-driven services to streamline portfolio analytics workflows, reducing latency by 50ms+ and boosting response efficiency by 30%.",
+      "Deployed and optimized applications on AWS (EC2, RDS, S3, Lambda, API Gateway) with Docker & Kubernetes, improving release frequency by 40%.",
+      "Automated client onboarding workflows across teams, cutting manual effort by 25% and accelerating time-to-value.",
+      "Implemented caching strategies and asynchronous data handling (RxJS) to improve real-time dashboard responsiveness.",
+      "Developed SQL/NoSQL data pipelines to clean and transform large datasets for analytics dashboards and automated reporting."
     ],
-    skills: ["React.js", "Spring Boot", "AWS", "Kafka", "ELK Stack", "JWT", "Jenkins", "Microservices"]
+    skills: ["React",
+      "TypeScript",
+      "Go",
+      "Microservices",
+      "REST APIs",
+      "RxJS",
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "EC2",
+      "RDS",
+      "S3",
+      "Lambda",
+      "API Gateway"]
   },
   {
     id: 2,
@@ -41,13 +55,29 @@ const experiences: Experience[] = [
     location: "Mumbai, India",
     duration: "Sep 2022 – Dec 2023",
     description: [
-      "Developed high-performance ReactJS trading applications for NSE, BSE, and MCX with live market data feeds via WebSockets.",
-      "Delivered dynamic dashboards with Chart.js and D3.js, increasing feature usage by 40%.",
-      "Optimized backend queries in MySQL and implemented JWT authentication to enhance security and compliance.",
-      "Improved application performance and reduced API calls with efficient Redux state management.",
-      "Deployed microservices to AWS with a 20% improvement in release cycle efficiency."
+      "Designed and delivered high-performance React.js and Angular front-end applications for fintech trading platforms, reducing UI-related bug reports by 30% and improving trader productivity.",
+      "Built responsive, cross-browser UIs with React, TypeScript, HTML5, CSS3, and Tailwind CSS for desktop, tablet, and mobile.",
+      "Integrated RESTful APIs and WebSocket streams for live market data (NSE, BSE, MCX) with sub-second updates for HFT use cases.",
+      "Developed and deployed microservices on AWS (EC2, RDS, Lambda) to handle real-time data pipelines, improving scalability and reducing downtime by 20%.",
+      "Leveraged Redux and RxJS Observables to manage complex async data flows, enhancing stability and responsiveness under heavy load.",
+      "Built interactive dashboards with Chart.js and D3.js for analytics, alerts, and news, increasing feature adoption by 40%.",
+      "Created reusable components/services to speed delivery and improve maintainability across multiple projects.",
+      "Collaborated with QA and product in Agile sprints—backlog refinement, feature delivery, and cross-functional knowledge sharing."
     ],
-    skills: ["React", "Redux", "WebSockets", "Chart.js", "D3.js", "JWT", "MySQL", "AWS"]
+    skills: ["React",
+      "Angular",
+      "TypeScript",
+      "Tailwind CSS",
+      "Redux",
+      "RxJS",
+      "WebSockets",
+      "Chart.js",
+      "D3.js",
+      "AWS",
+      "EC2",
+      "RDS",
+      "Lambda",
+      "REST APIs"]
   },
   {
     id: 3,
@@ -56,12 +86,20 @@ const experiences: Experience[] = [
     location: "Hyderabad, India",
     duration: "Aug 2019 – Aug 2022",
     description: [
-      "Contributed to enterprise web applications using Angular.js, Material UI, and Node.js APIs.",
-      "Migrated core JavaScript modules to TypeScript, reducing runtime errors by 45%.",
-      "Implemented Redis caching for high-read APIs, improving backend throughput by 35%.",
-      "Collaborated in Agile sprints, handled bug fixes, and supported test-driven development."
+      "Developed and maintained enterprise dashboards using Angular.js, Material UI, and Tailwind CSS for 400+ employees, improving analytics visibility.",
+      "Migrated core JavaScript modules to TypeScript, reducing runtime errors by 45% and improving maintainability.",
+      "Integrated RESTful APIs to support real-time onboarding and account management, improving transaction response times by 20%.",
+      "Optimized UI performance by collaborating on API contracts, reducing payloads and accelerating page loads.",
+      "Built modular, reusable UI components and responsive layouts for consistent cross-device experiences.",
+      "Enhanced accessibility using semantic HTML, ARIA, and keyboard navigation aligned with WCAG guidelines."
     ],
-    skills: ["Angular.js", "Material UI", "Node.js", "TypeScript", "Redis", "MySQL", "Agile"]
+    skills: ["Angular.js",
+      "Material UI",
+      "Tailwind CSS",
+      "TypeScript",
+      "REST APIs",
+      "Performance Optimization",
+      "Accessibility (WCAG/ARIA)"]
   }
 ];
 
