@@ -61,7 +61,7 @@ export function AboutSection() {
 
             <div className="pt-4">
               <a
-                href="https://maheshpersonalbucket.s3.us-east-1.amazonaws.com/Mahesh_Dev_Resume.pdf"
+                href="https://maheshpersonalbucket-backup.s3.us-east-1.amazonaws.com/Mahesh_Dev_Resume-latest.pdf"
 
                 download
                 target="_blank"

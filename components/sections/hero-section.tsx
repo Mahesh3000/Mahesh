@@ -76,7 +76,7 @@ export function HeroSection() {
           >
             <div className="w-full h-full rounded-full bg-background flex items-center justify-center overflow-hidden">
               <Image
-                src="https://maheshpersonalbucket.s3.us-east-1.amazonaws.com/IMG_3827.png"
+                src="https://maheshpersonalbucket-backup.s3.us-east-1.amazonaws.com/IMG_3827.png"
                 alt="Professional headshot"
                 width={500} // Set appropriate width & height
                 height={500}
