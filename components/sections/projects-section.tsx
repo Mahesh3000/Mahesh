@@ -48,7 +48,7 @@ const projects: Project[] = [
     description: "An interactive weather dashboard that displays current and forecasted weather data from multiple sources.",
     image: "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg",
     tags: ["React", "Node.js", "Express", "Open Wetaher API"],
-    liveUrl: "https://weatherappication.maheshsivangi.tech/",
+    liveUrl: "https://weatherapp.maheshsivangi.tech/",
     githubUrl: "https://github.com/Mahesh3000/Weather_App",
     featured: false,
   },
