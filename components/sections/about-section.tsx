@@ -27,30 +27,30 @@ export function AboutSection() {
           >
             <p className="text-lg">
               Hello! I’m <span className="font-semibold">Mahesh Sivangi</span>, a
-              Full-Stack Software Engineer with 4+ years building scalable web and
-              enterprise applications across fintech and trading.
+              Senior React Developer with 7+ years building scalable, modern
+              enterprise-grade applications across fintech and trading platforms.
             </p>
 
             <p className="mt-2">
-              I specialize in cloud-native microservices and high-performance UIs using{" "}
-              <strong>React, TypeScript, Spring Boot, Node.js, Go</strong>, and{" "}
+              I specialize in high-performance frontend systems and modern UI architectures using{" "}
+              <strong>React, TypeScript, Node.js, Angular</strong>, and{" "}
               <strong>AWS</strong>. I integrate <strong>real-time data</strong> via
-              WebSockets/Kafka, design robust REST APIs, and work across{" "}
+              WebSockets, design scalable REST APIs, and work across{" "}
               <strong>MySQL, PostgreSQL, MongoDB, and Redis</strong>.
             </p>
 
             <p className="mt-2">
-              Highlights include reducing request latency by <strong>50ms+</strong>,
-              cutting deployment time by <strong>70%</strong> with CI/CD{" "}
-              (Jenkins, GitHub Actions, CodePipeline), and increasing feature adoption by{" "}
-              <strong>30–40%</strong> through interactive, data-rich dashboards.
+              Highlights include reducing UI-related bugs by <strong>30%</strong>,
+              improving feature adoption by <strong>40%</strong> through interactive dashboards,
+              and delivering sub-second updates with <strong>WebSockets, Redux, and RxJS</strong>
+              for high-frequency trading workflows.
             </p>
 
             <p className="mt-2">
               I care about <strong>clean, maintainable code</strong>, secure auth{" "}
               (<strong>OAuth2, JWT</strong>), and collaborative delivery in Agile teams.
-              Lately I’m deepening <strong>Go</strong> and <strong>Spring Boot</strong>{" "}
-              microservices and data engineering patterns.
+              Lately I’m strengthening <strong>frontend architecture</strong>, reusable
+              component systems, and performance optimization patterns.
             </p>
 
             <p className="mt-2">
@@ -61,7 +61,7 @@ export function AboutSection() {
 
             <div className="pt-4">
               <a
-                href="https://maheshpersonalbucket-backup.s3.us-east-1.amazonaws.com/Mahesh_Dev_Resume-latest.pdf"
+                href="https://maheshportfoliodata.s3.us-east-2.amazonaws.com/Mahesh_FullStack_Dev_Resume.pdf"
 
                 download
                 target="_blank"
@@ -86,22 +86,22 @@ export function AboutSection() {
               {
                 title: "Education",
                 content:
-                  "M.S. in Computer Science — Southern Arkansas University (AR). Focus on full-stack engineering, cloud, and data-intensive systems.",
+                  "M.S. in Computer Science — Southern Arkansas University (AR). Focus on engineering, cloud, and scalable frontend systems.",
               },
               {
                 title: "Experience",
                 content:
-                  "4+ years shipping fintech/trading dashboards and microservices (Citigroup, 63moons, Adons). Real-time systems at scale.",
+                  "7+ years building fintech/trading frontends and systems (SwedBank, 63moons, Adons). Real-time applications at scale.",
               },
               {
                 title: "Technical Skills",
                 content:
-                  "React, TypeScript, Next.js, Node.js, Java/Spring Boot, Go; AWS (EC2, RDS, S3, Lambda, API Gateway, CloudFront), Docker, Kubernetes; Kafka, ELK; SQL/NoSQL; CI/CD.",
+                  "React, TypeScript, Next.js, Node.js, Angular, AWS (EC2, RDS, S3, Lambda, API Gateway, CloudFront), Docker, Kubernetes; Redux, RxJS; REST APIs; SQL/NoSQL; CI/CD.",
               },
               {
                 title: "Achievements",
                 content:
-                  "−50ms+ latency, −70% deploy time, +30–40% feature adoption. Built & deployed Breeze and CryptoTrack. AWS Cloud Practitioner certified.",
+                  "30% fewer UI bugs, 40% higher feature adoption. Built Breeze and CryptoTrack. AWS Cloud Practitioner certified professional.",
               },
             ].map((card, i) => (
               <div

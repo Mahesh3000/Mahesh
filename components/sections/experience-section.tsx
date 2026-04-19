@@ -21,88 +21,95 @@ interface Experience {
 const experiences: Experience[] = [
   {
     id: 1,
-    role: "Software Engineer",
-    company: "Citigroup",
+    role: "Software Engineer (Senior React Developer) - Contract",
+    company: "SwedBank",
     location: "USA",
-    duration: "Jun 2025 – Present",
+    duration: "Aug 2024 – Present",
     description: [
-      "Designed and developed full-stack features using React and TypeScript with Go services for a cloud-native, microservices-based trading analytics platform.",
-      "Built and integrated RESTful APIs and event-driven services to streamline portfolio analytics workflows, reducing latency by 50ms+ and boosting response efficiency by 30%.",
-      "Deployed and optimized applications on AWS (EC2, RDS, S3, Lambda, API Gateway) with Docker & Kubernetes, improving release frequency by 40%.",
-      "Automated client onboarding workflows across teams, cutting manual effort by 25% and accelerating time-to-value.",
-      "Implemented caching strategies and asynchronous data handling (RxJS) to improve real-time dashboard responsiveness.",
-      "Developed SQL/NoSQL data pipelines to clean and transform large datasets for analytics dashboards and automated reporting."
+      "Owned end-to-end frontend architecture for a cloud-native trading analytics platform using React and TypeScript, building scalable component-driven systems for high-performance enterprise workflows.",
+      "Implemented reusable UI workflows for portfolio analytics, approvals, monitoring, and onboarding, ensuring consistency, maintainability, and seamless user experience across modules.",
+      "Engineered real-time, data-driven UI systems using WebSockets and RxJS Observables to handle high-frequency financial data streams with sub-second dashboard updates.",
+      "Implemented secure authentication and authorization using JWT and OAuth2, protecting sensitive financial data and enforcing role-based access across multiple application modules.",
+      "Optimized application performance using lazy loading, memoization (useMemo/useCallback), and code splitting to reduce load times and improve dashboard responsiveness.",
+      "Collaborated closely with backend teams to design and optimize RESTful APIs, improving synchronization, reducing payload sizes, and strengthening microservices-based communication."
     ],
-    skills: ["React",
+    skills: [
+      "React",
       "TypeScript",
-      "Go",
-      "Microservices",
-      "REST APIs",
+      "Node.js",
+      "WebSockets",
       "RxJS",
-      "AWS",
-      "Docker",
-      "Kubernetes",
-      "EC2",
-      "RDS",
-      "S3",
-      "Lambda",
-      "API Gateway"]
+      "JWT",
+      "OAuth2",
+      "REST APIs",
+      "Code Splitting",
+      "Lazy Loading",
+      "Memoization",
+      "Microservices",
+      "Frontend Architecture",
+      "AWS"
+    ]
   },
   {
     id: 2,
     role: "Software Engineer",
     company: "63moons Technologies Ltd.",
-    location: "Mumbai, India",
+    location: "India",
     duration: "Sep 2022 – Dec 2023",
     description: [
-      "Designed and delivered high-performance React.js and Angular front-end applications for fintech trading platforms, reducing UI-related bug reports by 30% and improving trader productivity.",
-      "Built responsive, cross-browser UIs with React, TypeScript, HTML5, CSS3, and Tailwind CSS for desktop, tablet, and mobile.",
-      "Integrated RESTful APIs and WebSocket streams for live market data (NSE, BSE, MCX) with sub-second updates for HFT use cases.",
-      "Developed and deployed microservices on AWS (EC2, RDS, Lambda) to handle real-time data pipelines, improving scalability and reducing downtime by 20%.",
-      "Leveraged Redux and RxJS Observables to manage complex async data flows, enhancing stability and responsiveness under heavy load.",
-      "Built interactive dashboards with Chart.js and D3.js for analytics, alerts, and news, increasing feature adoption by 40%.",
-      "Created reusable components/services to speed delivery and improve maintainability across multiple projects.",
-      "Collaborated with QA and product in Agile sprints—backlog refinement, feature delivery, and cross-functional knowledge sharing."
+      "Designed and delivered high-performance React.js applications for fintech trading platforms, building scalable, data-intensive UI systems and reducing UI-related bugs by 30%.",
+      "Built complex UI workflows for trading actions, approvals, and analytics dashboards, enabling real-time decision-making and seamless interaction aligned with business processes.",
+      "Integrated RESTful APIs and WebSocket streams to support real-time market data from NSE, BSE, and MCX with sub-second updates.",
+      "Implemented advanced state management using Redux and RxJS, handling complex asynchronous data flows and event-driven updates with improved stability and responsiveness.",
+      "Developed interactive dashboards using Chart.js and D3.js to visualize trading analytics, alerts, and market trends, increasing feature adoption by 40%.",
+      "Designed reusable component libraries and scalable UI architecture to improve development efficiency, maintainability, and consistency across frontend modules.",
+      "Built scalable frontend patterns that supported high-volume transactions and responsive user experiences under heavy trading workloads.",
+      "Collaborated with product managers, backend engineers, and QA teams in Agile/Scrum environments to translate requirements into high-impact UI solutions."
     ],
-    skills: ["React",
+    skills: [
+      "React",
       "Angular",
       "TypeScript",
-      "Tailwind CSS",
       "Redux",
       "RxJS",
       "WebSockets",
+      "REST APIs",
       "Chart.js",
       "D3.js",
-      "AWS",
-      "EC2",
-      "RDS",
-      "Lambda",
-      "REST APIs"]
+      "Tailwind CSS",
+      "Scalable UI Architecture",
+      "Component Libraries",
+      "Agile/Scrum",
+      "AWS"
+    ]
   },
   {
     id: 3,
     role: "Jr. Software Engineer",
     company: "Adons Softech",
-    location: "Hyderabad, India",
-    duration: "Aug 2019 – Aug 2022",
+    location: "India",
+    duration: "Jan 2019 – Aug 2022",
     description: [
-      "Developed and maintained enterprise dashboards using Angular.js, Material UI, and Tailwind CSS for 400+ employees, improving analytics visibility.",
-      "Migrated core JavaScript modules to TypeScript, reducing runtime errors by 45% and improving maintainability.",
-      "Integrated RESTful APIs to support real-time onboarding and account management, improving transaction response times by 20%.",
-      "Optimized UI performance by collaborating on API contracts, reducing payloads and accelerating page loads.",
-      "Built modular, reusable UI components and responsive layouts for consistent cross-device experiences.",
-      "Enhanced accessibility using semantic HTML, ARIA, and keyboard navigation aligned with WCAG guidelines."
+      "Developed and maintained enterprise UI dashboards using Angular and modern JavaScript frameworks, supporting large-scale internal systems and improving analytics visibility.",
+      "Migrated large portions of the frontend codebase from JavaScript to TypeScript, reducing runtime errors by 45% and improving scalability and long-term maintainability.",
+      "Integrated RESTful APIs to support real-time account management, onboarding workflows, and transactional systems, improving response times by 20% and enhancing user experience.",
+      "Built reusable UI components to improve consistency and maintainability across multiple internal modules and frontend workflows.",
+      "Optimized frontend performance by refining API contracts, reducing payload sizes, and improving rendering efficiency across multiple screens.",
+      "Collaborated with cross-functional teams in Agile environments, contributing to sprint planning, debugging, and continuous improvement of frontend systems."
     ],
-    skills: ["Angular.js",
-      "Material UI",
-      "Tailwind CSS",
+    skills: [
+      "Angular",
+      "JavaScript",
       "TypeScript",
       "REST APIs",
+      "Reusable UI Components",
       "Performance Optimization",
-      "Accessibility (WCAG/ARIA)"]
+      "Frontend Development",
+      "Agile",
+      "Debugging"
+    ]
   }
 ];
-
 
 export function ExperienceSection() {
   const [ref, inView] = useInView({
@@ -130,34 +137,44 @@ export function ExperienceSection() {
             >
               {/* Timeline dot */}
               <div className="hidden md:block absolute top-6 w-12 h-12 rounded-full bg-muted flex items-center justify-center z-10">
-                <div className={`absolute ${index % 2 === 0 ? "left-0 -translate-x-1/2" : "right-0 translate-x-1/2"
-                  } top-1/2 -translate-y-1/2`}>
+                <div
+                  className={`absolute ${index % 2 === 0 ? "left-0 -translate-x-1/2" : "right-0 translate-x-1/2"
+                    } top-1/2 -translate-y-1/2`}
+                >
                   <div className="w-8 h-8 rounded-full bg-background border-4 border-primary flex items-center justify-center">
                     <Briefcase className="h-4 w-4 text-primary" />
                   </div>
                 </div>
               </div>
 
-              <Card className={`transition-transform duration-300 hover:-translate-y-2 ${index % 2 === 0 ? "md:text-right" : ""
-                }`}>
+              <Card
+                className={`transition-transform duration-300 hover:-translate-y-2 ${index % 2 === 0 ? "md:text-right" : ""
+                  }`}
+              >
                 <CardHeader>
                   <div className="flex justify-between items-center mb-1">
                     <span className="text-sm text-muted-foreground">{exp.duration}</span>
                     <span className="text-sm text-muted-foreground">{exp.location}</span>
                   </div>
                   <CardTitle className="text-xl">{exp.role}</CardTitle>
-                  <CardDescription className="text-lg font-medium text-foreground/80">{exp.company}</CardDescription>
+                  <CardDescription className="text-lg font-medium text-foreground/80">
+                    {exp.company}
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <ul className={`space-y-2 mb-4 list-disc ${index % 2 === 0 ? "md:ml-6" : "ml-6"
-                    }`}>
+                  <ul
+                    className={`space-y-2 mb-4 list-disc ${index % 2 === 0 ? "md:ml-6" : "ml-6"
+                      }`}
+                  >
                     {exp.description.map((item, idx) => (
                       <li key={idx}>{item}</li>
                     ))}
                   </ul>
                   <div className="flex flex-wrap gap-2 mt-4">
-                    {exp.skills.map(skill => (
-                      <Badge key={skill} variant="secondary">{skill}</Badge>
+                    {exp.skills.map((skill) => (
+                      <Badge key={skill} variant="secondary">
+                        {skill}
+                      </Badge>
                     ))}
                   </div>
                 </CardContent>
