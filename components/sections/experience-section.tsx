@@ -86,7 +86,7 @@ const experiences: Experience[] = [
   {
     id: 3,
     role: "Jr. Software Engineer",
-    company: "Adons Softech",
+    company: "Pythian Technologies Pvt. Ltd.",
     location: "India",
     duration: "Mar 2021 – Aug 2022",
     description: [
