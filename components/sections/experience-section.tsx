@@ -24,7 +24,7 @@ const experiences: Experience[] = [
     role: "Software Engineer (Senior React Developer) - Contract",
     company: "SwedBank",
     location: "USA",
-    duration: "Aug 2024 – Present",
+    duration: "Jun 2025 – Present",
     description: [
       "Owned end-to-end frontend architecture for a cloud-native trading analytics platform using React and TypeScript, building scalable component-driven systems for high-performance enterprise workflows.",
       "Implemented reusable UI workflows for portfolio analytics, approvals, monitoring, and onboarding, ensuring consistency, maintainability, and seamless user experience across modules.",
@@ -88,7 +88,7 @@ const experiences: Experience[] = [
     role: "Jr. Software Engineer",
     company: "Adons Softech",
     location: "India",
-    duration: "Jan 2019 – Aug 2022",
+    duration: "Mar 2021 – Aug 2022",
     description: [
       "Developed and maintained enterprise UI dashboards using Angular and modern JavaScript frameworks, supporting large-scale internal systems and improving analytics visibility.",
       "Migrated large portions of the frontend codebase from JavaScript to TypeScript, reducing runtime errors by 45% and improving scalability and long-term maintainability.",
