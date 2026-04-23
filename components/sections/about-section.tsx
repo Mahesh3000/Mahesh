@@ -47,6 +47,13 @@ export function AboutSection() {
             </p>
 
             <p className="mt-2">
+              My experience also includes working with{" "}
+              <strong>Cloud Functions, Cloud Run, Firebase Auth, and Firestore</strong>,
+              along with performance optimization techniques such as{" "}
+              <strong>SSR, CSR, code splitting, lazy loading, and memoization</strong>.
+            </p>
+
+            <p className="mt-2">
               I care about <strong>clean, maintainable code</strong>, secure auth{" "}
               (<strong>OAuth2, JWT</strong>), and collaborative delivery in Agile teams.
               Lately I’m strengthening <strong>frontend architecture</strong>, reusable

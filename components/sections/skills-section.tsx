@@ -47,6 +47,7 @@ const skillCategories: SkillCategory[] = [
     name: "Cloud & Engineering",
     skills: [
       { name: "AWS (EC2, S3, RDS, Lambda)", level: 82 },
+      { name: "GCP (Cloud Functions, Cloud Run, Firebase Auth, Firestore)", level: 78 },
       { name: "Docker / Kubernetes", level: 78 },
       { name: "Git / GitHub / GitLab", level: 90 },
       { name: "Jenkins / GitHub Actions", level: 80 },
