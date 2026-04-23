@@ -27,7 +27,7 @@ export function AboutSection() {
           >
             <p className="text-lg">
               Hello! I’m <span className="font-semibold">Mahesh Sivangi</span>, a
-              Senior React Developer with 7+ years building scalable, modern
+              Senior React Developer with 4+ years building scalable, modern
               enterprise-grade applications across fintech and trading platforms.
             </p>
 
@@ -91,7 +91,7 @@ export function AboutSection() {
               {
                 title: "Experience",
                 content:
-                  "7+ years building fintech/trading frontends and systems (SwedBank, 63moons, Adons). Real-time applications at scale.",
+                  "4+ years building fintech/trading frontends and systems (SwedBank, 63moons, Adons). Real-time applications at scale.",
               },
               {
                 title: "Technical Skills",
