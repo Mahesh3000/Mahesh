@@ -3,8 +3,16 @@ import { SESClient, SendEmailCommand } from "@aws-sdk/client-ses";
 
 export const runtime = "nodejs";
 
+// const sesClient = new SESClient({
+//   region: process.env.SES_REGION  || "us-east-1",
+// });
+
 const sesClient = new SESClient({
-  region: process.env.AWS_REGION || "us-east-1",
+  region: process.env.SES_REGION || "us-east-2",
+  credentials: {
+    accessKeyId: process.env.SES_ACCESS_KEY_ID || "",
+    secretAccessKey: process.env.SES_SECRET_ACCESS_KEY || "",
+  },
 });
 
 function isValidEmail(email: string) {
