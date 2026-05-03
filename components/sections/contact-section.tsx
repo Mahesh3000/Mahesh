@@ -43,19 +43,41 @@ export function ContactSection() {
     },
   });
 
-  function onSubmit(values: ContactFormValues) {
+  async function onSubmit(values: ContactFormValues) {
     setIsSubmitting(true);
 
-    // Simulate API call
-    setTimeout(() => {
-      console.log(values);
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.message || "Failed to send message");
+      }
+
       toast({
         title: "Message sent successfully!",
         description: "Thank you for reaching out. I'll get back to you soon.",
       });
+
       form.reset();
+    } catch (error) {
+      console.error("Contact form error:", error);
+
+      toast({
+        title: "Message failed",
+        description: "Something went wrong. Please email me directly.",
+        variant: "destructive",
+      });
+    } finally {
       setIsSubmitting(false);
-    }, 1500);
+    }
   }
 
   return (
