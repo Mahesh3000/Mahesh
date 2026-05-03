@@ -21,53 +21,52 @@ interface Experience {
 const experiences: Experience[] = [
   {
     id: 1,
-    role: "Software Engineer (Senior React Developer) - Contract",
+    role: "Software Engineer (Senior React Developer)",
     company: "SwedBank",
     location: "USA",
-    duration: "Jun 2025 – Present",
+    duration: "Aug 2024 – Present",
     description: [
-      "Owned end-to-end frontend architecture for a cloud-native trading analytics platform using React and TypeScript, building scalable component-driven systems for high-performance enterprise workflows.",
-      "Implemented reusable UI workflows for portfolio analytics, approvals, monitoring, and onboarding, ensuring consistency, maintainability, and seamless user experience across modules.",
-      "Engineered real-time, data-driven UI systems using WebSockets and RxJS Observables to handle high-frequency financial data streams with sub-second dashboard updates.",
-      "Implemented secure authentication and authorization using JWT and OAuth2, protecting sensitive financial data and enforcing role-based access across multiple application modules.",
-      "Optimized application performance using lazy loading, memoization (useMemo/useCallback), and code splitting to reduce load times and improve dashboard responsiveness.",
-      "Collaborated closely with backend teams to design and optimize RESTful APIs, improving synchronization, reducing payload sizes, and strengthening microservices-based communication."
+      "Designed and developed scalable React.js applications for a cloud-native trading analytics platform, building high-performance dashboards, login/authentication flows, and real-time data-driven UI systems.",
+      "Built complex UI workflows for portfolio analytics, approvals, monitoring systems, and reusable component libraries using component-driven architecture to standardize UI development and improve scalability.",
+      "Implemented advanced state management using Redux, Context API, and RxJS to handle complex asynchronous workflows and real-time event-driven updates.",
+      "Integrated RESTful APIs and backend services to enable dynamic data synchronization, user-triggered actions, and seamless frontend-backend communication.",
+      "Optimized frontend performance using lazy loading, memoization, and code splitting, improving dashboard responsiveness and user experience.",
+      "Reduced latency by 50ms+ and improved response efficiency by 30% through optimized rendering strategies and efficient data handling.",
+      "Collaborated with business stakeholders, backend teams, and QA in Agile/Scrum environments to translate requirements into scalable UI solutions."
     ],
     skills: [
-      "React",
+      "React.js",
       "TypeScript",
-      "Node.js",
-      "WebSockets",
+      "JavaScript",
+      "Redux",
+      "Context API",
       "RxJS",
-      "JWT",
-      "OAuth2",
       "REST APIs",
-      "Code Splitting",
+      "WebSockets",
       "Lazy Loading",
       "Memoization",
-      "Microservices",
-      "Frontend Architecture",
-      "AWS"
+      "Code Splitting",
+      "AWS",
+      "Agile/Scrum"
     ]
   },
   {
     id: 2,
     role: "Software Engineer",
-    company: "63moons Technologies Ltd.",
+    company: "63moons Technologies Limited",
     location: "India",
     duration: "Sep 2022 – Dec 2023",
     description: [
       "Designed and delivered high-performance React.js applications for fintech trading platforms, building scalable, data-intensive UI systems and reducing UI-related bugs by 30%.",
-      "Built complex UI workflows for trading actions, approvals, and analytics dashboards, enabling real-time decision-making and seamless interaction aligned with business processes.",
-      "Integrated RESTful APIs and WebSocket streams to support real-time market data from NSE, BSE, and MCX with sub-second updates.",
-      "Implemented advanced state management using Redux and RxJS, handling complex asynchronous data flows and event-driven updates with improved stability and responsiveness.",
-      "Developed interactive dashboards using Chart.js and D3.js to visualize trading analytics, alerts, and market trends, increasing feature adoption by 40%.",
-      "Designed reusable component libraries and scalable UI architecture to improve development efficiency, maintainability, and consistency across frontend modules.",
-      "Built scalable frontend patterns that supported high-volume transactions and responsive user experiences under heavy trading workloads.",
-      "Collaborated with product managers, backend engineers, and QA teams in Agile/Scrum environments to translate requirements into high-impact UI solutions."
+      "Built complex UI workflows for trading actions, approvals, and analytics dashboards, enabling real-time decision-making and seamless user interaction aligned with business processes.",
+      "Integrated RESTful APIs and WebSocket streams to support real-time market data from NSE, BSE, and MCX, achieving sub-second updates critical for high-frequency trading environments.",
+      "Implemented advanced state management using Redux and RxJS, handling complex asynchronous data flows, event-driven updates, and high-volume transactions with improved stability and responsiveness.",
+      "Developed interactive dashboards using Chart.js and D3.js to visualize trading analytics, alerts, and market trends, increasing feature adoption by 40% among active users.",
+      "Designed reusable component libraries and scalable UI architecture, improving development efficiency, maintainability, and consistency across multiple frontend modules.",
+      "Collaborated with product managers, backend engineers, and QA teams in Agile/Scrum environments to translate business requirements into scalable, high-impact UI solutions."
     ],
     skills: [
-      "React",
+      "React.js",
       "Angular",
       "TypeScript",
       "Redux",
@@ -77,25 +76,23 @@ const experiences: Experience[] = [
       "Chart.js",
       "D3.js",
       "Tailwind CSS",
-      "Scalable UI Architecture",
       "Component Libraries",
-      "Agile/Scrum",
-      "AWS"
+      "Scalable UI Architecture",
+      "Agile/Scrum"
     ]
   },
   {
     id: 3,
     role: "Jr. Software Engineer",
-    company: "Pythian Technologies Pvt. Ltd.",
+    company: "Adons Softech",
     location: "India",
-    duration: "Mar 2021 – Aug 2022",
+    duration: "Jan 2019 – Aug 2022",
     description: [
-      "Developed and maintained enterprise UI dashboards using Angular and modern JavaScript frameworks, supporting large-scale internal systems and improving analytics visibility.",
-      "Migrated large portions of the frontend codebase from JavaScript to TypeScript, reducing runtime errors by 45% and improving scalability and long-term maintainability.",
+      "Developed and maintained enterprise UI dashboards using Angular and modern JavaScript frameworks, supporting large-scale internal systems and improving analytics visibility for business users.",
+      "Migrated large portions of the frontend codebase from JavaScript to TypeScript, reducing runtime errors by 45%, improving code quality, scalability, and long-term maintainability.",
       "Integrated RESTful APIs to support real-time account management, onboarding workflows, and transactional systems, improving response times by 20% and enhancing user experience.",
-      "Built reusable UI components to improve consistency and maintainability across multiple internal modules and frontend workflows.",
-      "Optimized frontend performance by refining API contracts, reducing payload sizes, and improving rendering efficiency across multiple screens.",
-      "Collaborated with cross-functional teams in Agile environments, contributing to sprint planning, debugging, and continuous improvement of frontend systems."
+      "Built reusable UI components and optimized frontend performance by refining API contracts, reducing payload sizes, and improving rendering efficiency across multiple modules.",
+      "Collaborated with cross-functional teams to deliver features in Agile environments, contributing to sprint planning, debugging, and continuous improvement of frontend systems."
     ],
     skills: [
       "Angular",

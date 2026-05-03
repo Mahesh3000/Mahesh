@@ -27,53 +27,61 @@ export function AboutSection() {
           >
             <p className="text-lg">
               Hello! I’m <span className="font-semibold">Mahesh Sivangi</span>, a
-              Senior React Developer with 4+ years building scalable, modern
-              enterprise-grade applications across fintech and trading platforms.
+              Senior React Developer with 7+ years of experience building scalable,
+              enterprise-grade frontend applications for fintech and trading platforms.
             </p>
 
             <p className="mt-2">
-              I specialize in high-performance frontend systems and modern UI architectures using{" "}
-              <strong>React, TypeScript, Node.js, Angular</strong>, and{" "}
-              <strong>AWS</strong>. I integrate <strong>real-time data</strong> via
-              WebSockets, design scalable REST APIs, and work across{" "}
-              <strong>MySQL, PostgreSQL, MongoDB, and Redis</strong>.
+              I specialize in high-performance UI systems, complex workflows, and
+              component-driven architecture using{" "}
+              <strong>React.js, TypeScript, JavaScript, Angular</strong>, and{" "}
+              <strong>Node.js</strong>. I build reusable UI libraries, real-time
+              dashboards, authentication flows, and data-driven interfaces for
+              production applications.
+            </p>
+
+            <p className="mt-2">
+              My experience includes integrating <strong>RESTful APIs</strong>,{" "}
+              <strong>WebSockets</strong>, and backend services to support dynamic
+              data synchronization, user-triggered actions, and real-time trading
+              workflows across high-throughput systems.
+            </p>
+
+            <p className="mt-2">
+              I have hands-on experience with advanced state management using{" "}
+              <strong>Redux, Context API, and RxJS</strong> to manage asynchronous
+              workflows, event-driven updates, and complex frontend application state.
             </p>
 
             <p className="mt-2">
               Highlights include reducing UI-related bugs by <strong>30%</strong>,
-              improving feature adoption by <strong>40%</strong> through interactive dashboards,
-              and delivering sub-second updates with <strong>WebSockets, Redux, and RxJS</strong>
-              for high-frequency trading workflows.
+              increasing feature adoption by <strong>40%</strong>, reducing latency by{" "}
+              <strong>50ms+</strong>, and improving response efficiency by{" "}
+              <strong>30%</strong> through optimized rendering and efficient data handling.
             </p>
 
             <p className="mt-2">
-              My experience also includes working with{" "}
-              <strong>Cloud Functions, Cloud Run, Firebase Auth, and Firestore</strong>,
-              along with performance optimization techniques such as{" "}
-              <strong>SSR, CSR, code splitting, lazy loading, and memoization</strong>.
+              I also work with <strong>AWS</strong> services including EC2, RDS, S3,
+              Lambda, API Gateway, CloudFront, and CodePipeline, along with{" "}
+              <strong>Docker, Kubernetes, GitHub Actions, and Jenkins</strong> for
+              cloud-native delivery and CI/CD workflows.
             </p>
 
             <p className="mt-2">
-              I care about <strong>clean, maintainable code</strong>, secure auth{" "}
-              (<strong>OAuth2, JWT</strong>), and collaborative delivery in Agile teams.
-              Lately I’m strengthening <strong>frontend architecture</strong>, reusable
-              component systems, and performance optimization patterns.
-            </p>
-
-            <p className="mt-2">
-              On the side, I build{" "}
-              <span className="italic">CryptoTrack</span> (Next.js + AWS) and{" "}
-              <span className="italic">Breeze</span> (trading UI with RxJS/WebSockets).
+              On the side, I build projects like{" "}
+              <span className="italic">Breeze</span>, a real-time trading UI using
+              React, TypeScript, RxJS, and WebSockets, and{" "}
+              <span className="italic">CryptoTrack</span>, a Next.js and AWS-based
+              cryptocurrency tracking application.
             </p>
 
             <div className="pt-4">
               <a
-                href="https://maheshportfoliodata.s3.us-east-2.amazonaws.com/Mahesh_FullStack_Dev_jjlResume.pdf"
-
+                href="https://maheshportfoliodata.s3.us-east-2.amazonaws.com/Mahesh_Frontend_Dev_Resume.pdf"
                 download
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Download Mahesh Sivangi Resume (PDF)"
+                aria-label="Download Mahesh Sivangi Resume PDF"
               >
                 <Button className="flex items-center gap-2">
                   <Download className="h-4 w-4" />
@@ -93,29 +101,31 @@ export function AboutSection() {
               {
                 title: "Education",
                 content:
-                  "M.S. in Computer Science — Southern Arkansas University (AR). Focus on engineering, cloud, and scalable frontend systems.",
+                  "M.S. in Computer Science from Southern Arkansas University. Focused on software engineering, cloud computing, full-stack development, and scalable frontend systems.",
               },
               {
                 title: "Experience",
                 content:
-                  "4+ years building fintech/trading frontends and systems (SwedBank, 63moons, Adons). Real-time applications at scale.",
+                  "7+ years building enterprise frontend applications across fintech and trading platforms, including InfoKeys, 63moons Technologies, and Adons Softech.",
               },
               {
                 title: "Technical Skills",
                 content:
-                  "React, TypeScript, Next.js, Node.js, Angular, AWS (EC2, RDS, S3, Lambda, API Gateway, CloudFront), Docker, Kubernetes; Redux, RxJS; REST APIs; SQL/NoSQL; CI/CD.",
+                  "React.js, TypeScript, JavaScript, Angular, Node.js, Redux, Context API, RxJS, REST APIs, WebSockets, AWS, Docker, Kubernetes, SQL/NoSQL, and CI/CD.",
               },
               {
                 title: "Achievements",
                 content:
-                  "30% fewer UI bugs, 40% higher feature adoption. Built Breeze and CryptoTrack. AWS Cloud Practitioner certified professional.",
+                  "Reduced UI bugs by 30%, improved feature adoption by 40%, reduced latency by 50ms+, and improved response efficiency by 30% in production systems.",
               },
             ].map((card, i) => (
               <div
                 key={i}
                 className="rounded-2xl shadow-lg bg-white dark:bg-gray-900 p-8 min-h-[200px] flex flex-col justify-start border border-gray-200 dark:border-gray-700 transition-colors duration-500"
               >
-                <h3 className="text-xl font-semibold text-primary mb-4">{card.title}</h3>
+                <h3 className="text-xl font-semibold text-primary mb-4">
+                  {card.title}
+                </h3>
                 <p className="text-base text-gray-700 dark:text-gray-300 leading-relaxed">
                   {card.content}
                 </p>
