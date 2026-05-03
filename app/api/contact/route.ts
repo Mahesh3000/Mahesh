@@ -3,18 +3,6 @@ import { SESClient, SendEmailCommand } from "@aws-sdk/client-ses";
 
 export const runtime = "nodejs";
 
-// const sesClient = new SESClient({
-//   region: process.env.SES_REGION  || "us-east-1",
-// });
-
-const sesClient = new SESClient({
-  region: process.env.SES_REGION || "us-east-2",
-  credentials: {
-    accessKeyId: process.env.SES_ACCESS_KEY_ID || "",
-    secretAccessKey: process.env.SES_SECRET_ACCESS_KEY || "",
-  },
-});
-
 function isValidEmail(email: string) {
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 }
@@ -30,6 +18,27 @@ function escapeHtml(value: string) {
 
 export async function POST(request: Request) {
   try {
+    const requiredEnvVars = [
+      "SES_REGION",
+      "SES_ACCESS_KEY_ID",
+      "SES_SECRET_ACCESS_KEY",
+      "SES_FROM_EMAIL",
+      "CONTACT_TO_EMAIL",
+    ];
+
+    const missingEnvVars = requiredEnvVars.filter((key) => !process.env[key]);
+
+    if (missingEnvVars.length > 0) {
+      console.error("Missing environment variables:", missingEnvVars);
+
+      return NextResponse.json(
+        {
+          message: `Missing environment variables: ${missingEnvVars.join(", ")}`,
+        },
+        { status: 500 },
+      );
+    }
+
     const body = await request.json();
 
     const name = String(body.name || "").trim();
@@ -37,43 +46,44 @@ export async function POST(request: Request) {
     const subject = String(body.subject || "").trim();
     const message = String(body.message || "").trim();
 
-    if (!name || name.length < 2) {
+    if (name.length < 2) {
       return NextResponse.json(
         { message: "Name is required" },
         { status: 400 },
       );
     }
 
-    if (!email || !isValidEmail(email)) {
+    if (!isValidEmail(email)) {
       return NextResponse.json(
         { message: "Valid email is required" },
         { status: 400 },
       );
     }
 
-    if (!subject || subject.length < 3) {
+    if (subject.length < 3) {
       return NextResponse.json(
         { message: "Subject is required" },
         { status: 400 },
       );
     }
 
-    if (!message || message.length < 10) {
+    if (message.length < 10) {
       return NextResponse.json(
         { message: "Message is too short" },
         { status: 400 },
       );
     }
 
-    const fromEmail = process.env.SES_FROM_EMAIL;
-    const toEmail = process.env.CONTACT_TO_EMAIL;
+    const sesClient = new SESClient({
+      region: process.env.SES_REGION,
+      credentials: {
+        accessKeyId: process.env.SES_ACCESS_KEY_ID!,
+        secretAccessKey: process.env.SES_SECRET_ACCESS_KEY!,
+      },
+    });
 
-    if (!fromEmail || !toEmail) {
-      return NextResponse.json(
-        { message: "Email configuration is missing" },
-        { status: 500 },
-      );
-    }
+    const fromEmail = process.env.SES_FROM_EMAIL!;
+    const toEmail = process.env.CONTACT_TO_EMAIL!;
 
     const safeName = escapeHtml(name);
     const safeEmail = escapeHtml(email);
