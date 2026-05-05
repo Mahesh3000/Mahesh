@@ -24,7 +24,7 @@ const experiences: Experience[] = [
     role: "Software Engineer (Senior React Developer)",
     company: "SwedBank",
     location: "USA",
-    duration: "Aug 2024 – Present",
+    duration: "Aug 2025 – Present",
     description: [
       "Designed and developed scalable React.js applications for a cloud-native trading analytics platform, building high-performance dashboards, login/authentication flows, and real-time data-driven UI systems.",
       "Built complex UI workflows for portfolio analytics, approvals, monitoring systems, and reusable component libraries using component-driven architecture to standardize UI development and improve scalability.",

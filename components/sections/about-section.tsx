@@ -27,8 +27,9 @@ export function AboutSection() {
           >
             <p className="text-lg">
               Hello! I’m <span className="font-semibold">Mahesh Sivangi</span>, a
-              Senior React Developer with 7+ years of experience building scalable,
-              enterprise-grade frontend applications for fintech and trading platforms.
+              Senior Software Developer specializing in scalable, enterprise-grade
+              frontend and full-stack applications for fintech, trading, and
+              cloud-native platforms.
             </p>
 
             <p className="mt-2">
@@ -101,12 +102,12 @@ export function AboutSection() {
               {
                 title: "Education",
                 content:
-                  "M.S. in Computer Science from Southern Arkansas University. Focused on software engineering, cloud computing, full-stack development, and scalable frontend systems.",
+                  "M.S. in Computer Science from Southern Arkansas University, with a focus on software engineering, cloud computing, full-stack development, and scalable application architecture.",
               },
               {
                 title: "Experience",
                 content:
-                  "7+ years building enterprise frontend applications across fintech and trading platforms, including InfoKeys, 63moons Technologies, and Adons Softech.",
+                  "Senior-level experience building enterprise applications across fintech and trading platforms, including InfoKeys, 63moons Technologies, and Adons Softech.",
               },
               {
                 title: "Technical Skills",
